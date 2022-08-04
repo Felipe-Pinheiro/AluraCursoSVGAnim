@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1552.61 980">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="50 0 1395 980">
   <defs>
+    
     <style>
       .cls-1, .cls-12, .cls-20 {
         fill: none;
@@ -192,7 +193,30 @@
       }
     </style>
     <style>
-      
+        @keyframes movimentoCaiaques{
+            to {
+                transform: translate(-4px , 6px)
+                <!-- primeiro valor é o X e o segundo é o Y  -->
+            }
+        }
+
+        @keyframes movimentoNuvensE{
+            to {
+                transform: translate(-400px)
+                <!-- primeiro valor é o X e o segundo é o Y  -->
+            }
+        }
+
+        #caiaque-1 , #caiaque-2{
+
+          animation : movimentoCaiaques 2s ease-in-out infinite alternate;
+        }
+
+        #nuvem1 , #nuvem2 {
+          <!-- visibility: hidden; -->
+          animation: movimentoNuvensE 60s ease-in-out infinite alternate;  
+        }
+
     </style>
     <linearGradient id="linear-gradient" x1="700" y1="588.28" x2="700" y2="375.14" gradientTransform="translate(0 384.72)" gradientUnits="userSpaceOnUse">
       <stop offset="0.19" stop-color="#ffead4"/>

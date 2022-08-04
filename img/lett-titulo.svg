@@ -1,4 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 728.4 290.09">
+  <defs>
+    <style>
+
+        @keyframes pree{
+          to{
+            fill : red;
+          }
+        }
+
+        @keyframes contorno{
+          to{
+            stroke-dashoffset: 0;
+          }
+        }
+
+        #lettering,#exclamacao{
+              fill: transparent;
+              animation: pree 0.5s ease-in-out forwards 2.5s;
+              <!-- forwards significa que ele vai ficar parado no ultimo frame da animação  -->
+        }
+
+        #lettering path,#exclamacao path {
+          stroke-width : 2;
+          stroke : red;
+          stroke-dasharray: 3000;
+          stroke-dashoffset: 3000;
+          animation: contorno 3s ease-in-out forwards 1s ;
+        }
+
+    </style>
+   </defs>
+
+
   <title>lett-titulo</title>
   <g id="lettering">
     <g>

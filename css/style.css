@@ -1,3 +1,15 @@
 body{
     background-color: rgb(88, 88, 88);
+    overflow-x: hidden;
+    
 }
+
+.lett{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    margin-top: 5%;
+    
+}
+
